@@ -75,3 +75,11 @@ for n in x:
 x = range(100, 20, -5);
 for n in x:
     print(n);
+
+# 13
+slowniki = [{"xde": 1, "edx": "lukasz"}, {"malina": 5, "jerzyna": 10}, {"worek": 1, 2: "kartofli"}]
+napis = ""
+for x in slowniki:
+    for y in x.keys():
+        napis += str(x[y]) + " "
+print(napis)
