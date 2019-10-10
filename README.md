@@ -3,4 +3,4 @@
 
 Witam, 
 tutaj nowy konflikt
-tu 2 konflikt
+tu 2 konflikt, raz dwa trzy
