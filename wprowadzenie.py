@@ -1,11 +1,11 @@
 #1
-ipsum="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+tekst="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 #2
-imie="janek"
-nazwisko="maslo"
+imie="qweqweqwesdfgfgh"
+nazwisko="sdfgsdfg"
 dane=("W tekście jest { %s } liter %s oraz { %s } liter %s")
 
-print(dane % (ipsum.count(imie[2]), imie[2], ipsum.count(nazwisko[2]), nazwisko[2]))
+print(dane % (tekst.count(imie[2]), imie[2], tekst.count(nazwisko[2]), nazwisko[2]))
 
 #3
 a = "Lukasz jest fajny"
@@ -43,6 +43,29 @@ listaaa.sort();
 listaaa.reverse();
 print(listaa);
 print(listaaa);
+
+
+#8
+krotka1=(144123, 'Vesek')
+krotka2=(144124, 'Cichy')
+krotka3=(144125, 'Pawko')
+
+lista_krotek=[krotka1, krotka2, krotka3]
+#(nr_albumu, imie)= krotka1
+print(lista_krotek)
+
+
+#9
+slownik=dict(lista_krotek)
+print(lista_krotek)
+
+#10
+numery_tel = [123456789, 123456789, 123456789, 987654321, 987654321]
+numery_tel2 = list(set(numery_tel))
+
+print(numery_tel2)
+
+
 #11
 x = range(1, 11);
 for n in x:
