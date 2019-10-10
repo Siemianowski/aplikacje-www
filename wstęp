@@ -1,12 +1,12 @@
 from datetime import datetime
 #1
-ipsum="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+tekst="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 #2
-imie="adam"
-nazwisko="spadam"
+imie="qweqweqwesdfgfgh"
+nazwisko="sdfgsdfg"
 dane=("W tekście jest { %s } liter %s oraz { %s } liter %s")
 
-print(dane % (ipsum.count(imie[2]), imie[2], ipsum.count(nazwisko[2]), nazwisko[2]))
+print(dane % (tekst.count(imie[2]), imie[2], tekst.count(nazwisko[2]), nazwisko[2]))
 #3
 # 3.1
 format1='{:^111}'.format('zip')
@@ -28,4 +28,5 @@ zmienna_typu_string="elit"
 print(dir(zmienna_typu_string))
 help(zmienna_typu_string.casefold)
 #5
-print(imie[:])
+print(imie[::-1]);
+print(nazwisko[::-1]);
