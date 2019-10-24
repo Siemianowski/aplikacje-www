@@ -2,5 +2,6 @@
 141036, 144138
 
 Witam, 
-tutaj  koasdadadadsanflikt
+ 
+ db_schema.png - schemat bazy danych
 
