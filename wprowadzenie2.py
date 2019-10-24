@@ -1,30 +1,30 @@
-def function_1(lista_1, lista_2):
+def function_1(a_list , b_list):
     lista_3 = []
-    for i in range(0, len(lista_1)):
+    for i in range(0, len(a_list )):
         if i % 2:
-            lista_3.append(lista_1[i])
-    for i in range(0, len(lista_2)):
+            lista_3.append(a_list [i])
+    for i in range(0, len(b_list)):
         if not i % 2:
-            lista_3.append(lista_2[i])
+            lista_3.append(b_list[i])
     return lista_3
 
 
-lista_1 = [i for i in range(1, 16)]
-lista_2 = [i for i in range(23, 39)]
-print(function_1(lista_1, lista_2))
+a_list  = [i for i in range(1, 16)]
+b_list = [i for i in range(23, 39)]
+print(function_1(a_list , b_list))
 
 
 #---------------------------------------------
 
-def function_2(tekst):
-    return {'length': len(tekst),
-            'letters': list(set(list(tekst))),
-            'big_letters': tekst.upper(),
-            'small_letters': tekst.lower(),
+def function_2(data_text):
+    return {'length': len(data_text),
+            'letters': list(set(list(data_text))),
+            'big_letters': data_text.upper(),
+            'small_letters': data_text.lower(),
             }
 
 
-tekst = "Dzbany"
-print(function_2(tekst))
+data_text = "Dzbany"
+print(function_2(data_text))
 
 #----------------------------------------------
