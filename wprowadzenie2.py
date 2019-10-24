@@ -24,7 +24,7 @@ def function_2(tekst):
             }
 
 
-tekst = "Koteł"
+tekst = "Dzbany"
 print(function_2(tekst))
 
 #----------------------------------------------
