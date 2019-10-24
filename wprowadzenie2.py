@@ -14,3 +14,17 @@ lista_2 = [i for i in range(23, 39)]
 print(function_1(lista_1, lista_2))
 
 
+#---------------------------------------------
+
+def function_2(tekst):
+    return {'length': len(tekst),
+            'letters': list(set(list(tekst))),
+            'big_letters': tekst.upper(),
+            'small_letters': tekst.lower(),
+            }
+
+
+tekst = "Koteł"
+print(function_2(tekst))
+
+#----------------------------------------------
