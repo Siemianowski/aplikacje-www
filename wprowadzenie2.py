@@ -55,3 +55,31 @@ def function_4(temperature, temperature_type):
     return temp
 
 
+#cw5-----------------------------------------------
+class Calculator:
+    def add(self, x, y):
+        return x + y
+    def difference(self, x, y):
+        return x - y
+    def multiply(self, x, y):
+        return x * y
+    def divide(self, x, y):
+        return x / y
+    
+#cw6-----------------------------------------------
+from z5 import Calculator
+
+class ScienceCalculator(Calculator):
+    def power(self, x, y):
+        return pow(x, y)
+
+c = ScienceCalculator()
+print(c.power(5, 10))
+
+#cw7----------------------------------------------
+def function_7(text):
+    return text[::-1]
+
+text = "pomidor"
+print(my_function(text))
+
