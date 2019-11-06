@@ -1,3 +1,4 @@
+#cw1---------------------------------------------
 def function_1(a_list , b_list):
     lista_3 = []
     for i in range(0, len(a_list )):
@@ -14,7 +15,7 @@ b_list = [i for i in range(23, 39)]
 print(function_1(a_list , b_list))
 
 
-#---------------------------------------------
+#cw2---------------------------------------------
 
 def function_2(data_text):
     return {'length': len(data_text),
@@ -27,4 +28,30 @@ def function_2(data_text):
 data_text = "Dzbany"
 print(function_2(data_text))
 
-#----------------------------------------------
+#cw3----------------------------------------------
+def funtion_3(text, letter):
+    return text.lower().replace(letter.lower(), "")
+
+
+text = "Paweł weźmiesz mnie do pracy"
+letter = "P"
+print(my_function(text, letter))
+
+#cw4-----------------------------------------------
+def function_4(temperature, temperature_type):
+    temp = 0
+    # if params valid
+    if temperature < -273:
+        return Exception("Temperatura nie istnieje")
+    elif temperature_type not in ["K", "F", "R"]:
+        return Exception("Wybierz rodzaj temp (kelvin - K, fahrenheit - F, rankine - R)")
+    # calc
+    if temperature_type.lower() == "F":
+        temp = (temperature * 1.8) + 32
+    elif temperature_type.lower() == "K":
+        temp = temperature + 273.15
+    elif temperature_type.lower() == "R":
+        temp = (temperature + 273.15) * 1.8
+    return temp
+
+
