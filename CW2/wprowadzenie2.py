@@ -29,13 +29,13 @@ data_text = "Dzbany"
 print(function_2(data_text))
 
 #cw3----------------------------------------------
-def funtion_3(text, letter):
+def function_3(text, letter):
     return text.lower().replace(letter.lower(), "")
 
 
 text = "Paweł weźmiesz mnie do pracy"
 letter = "P"
-print(my_function(text, letter))
+print(function_3(text, letter))
 
 #cw4-----------------------------------------------
 def function_4(temperature, temperature_type):
@@ -81,5 +81,5 @@ def function_7(text):
     return text[::-1]
 
 text = "pomidor"
-print(my_function(text))
+print(function_7(text))
 
