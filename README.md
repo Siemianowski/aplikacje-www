@@ -3,5 +3,6 @@
 
 Witam, 
  
- db_schema.png - schemat bazy danych
+ db_schema.png - # Model bazy danych
+  db_schema_poprawiony.png - # Model bazy danych_poprawiony
 
