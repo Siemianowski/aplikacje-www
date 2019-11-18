@@ -1,4 +1,5 @@
 from django.db import models
+from django.db.models import ForeignKey
 
 
 class klient(models.Model):
@@ -11,29 +12,34 @@ class klient(models.Model):
     kod_pocztowy = models.CharField(max_length=45)
     miasto = models.CharField(max_length=45)
 
-
-class zamowienie(models.Model):
-    id_zamowienie = models.IntegerField(primary_key=True)
-    id_klient = models.ForeignKey(klient, on_delete=models.CASCADE)
-    id_towar = models.ForeignKey(towary, on_delete=models.CASCADE)
-    ilosc = models.IntegerField()
-    data_zamowienia = models.DateTimeField()
-
-
 class kategoria(models.Model):
     id_kategoria = models.IntegerField(primary_key=True)
     nazwa = models.CharField(max_length=45)
 
 
-class towary(models.Model):
+class towar(models.Model):
     id_towar = models.IntegerField(primary_key=True)
-    id_kategoria = models.ForeignKey(kategoria, on_delete=models.CASCADE)
+    id_kategoria = models.ForeignKey(kategoria, on_delete=models.PROTECT)
     nazwa_towaru = models.CharField(max_length=45)
-    cena_brutto = models.FloatField()
-    cena_netto = models.FloatField()
+    cena_brutto = models.FloatField(default=0)
+    cena_netto = models.FloatField(default=0)
 
 
-class admin(models.Model):
+class zamowienie(models.Model):
+    id_zamowienie = models.IntegerField(primary_key=True)
+    id_towar = models.ForeignKey(towar, on_delete=models.PROTECT)
+    id_klient = models.ForeignKey(klient, on_delete=models.PROTECT)
+    ilosc = models.IntegerField(default=0)
+    data_zamowienia = models.DateTimeField(auto_now_add=True)
+
+    # def __str__(self):
+    #     return "%i " % self.ilosc
+
+
+
+
+
+class uzytownik(models.Model):
     id_admin = models.IntegerField(primary_key=True)
     login = models.CharField(max_length=45)
     haslo = models.CharField(max_length=45)
