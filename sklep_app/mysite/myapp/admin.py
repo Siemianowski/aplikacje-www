@@ -14,5 +14,5 @@ admin.site.register(towar)
 from .models import zamowienie
 admin.site.register(zamowienie)
 
-from .models import uzytownik
-admin.site.register(uzytownik)
+from .models import uzytkownik
+admin.site.register(uzytkownik)

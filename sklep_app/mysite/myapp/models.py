@@ -8,9 +8,12 @@ class klient(models.Model):
     email = models.CharField(max_length=100)
     haslo = models.CharField(max_length=45)
     nazwisko = models.CharField(max_length=45)
-    adres = models.CharField(max_length=45)
+    adres = models.CharField(max_length=100)
     kod_pocztowy = models.CharField(max_length=45)
-    miasto = models.CharField(max_length=45)
+
+    def __str__(self):
+        return self.login
+
 
 class kategoria(models.Model):
     id_kategoria = models.IntegerField(primary_key=True)
@@ -36,10 +39,7 @@ class zamowienie(models.Model):
     #     return "%i " % self.ilosc
 
 
-
-
-
-class uzytownik(models.Model):
+class uzytkownik(models.Model):
     id_admin = models.IntegerField(primary_key=True)
     login = models.CharField(max_length=45)
     haslo = models.CharField(max_length=45)
