@@ -1,7 +1,7 @@
 from rest_framework import serializers
 import re
 
-from .models import towar, klient, kategoria, zamowienie, uzytownik
+from .models import towar, klient, kategoria, zamowienie, uzytkownik
 
 
 class klientSerializer(serializers.ModelSerializer):
@@ -85,7 +85,7 @@ class zamowieniaSerializer(serializers.ModelSerializer):
 
 class uzytkownikSerializer(serializers.ModelSerializer):
     class Meta:
-        model = uzytownik
+        model = uzytkownik
         fields = ["id_admin", "login", "haslo"]
 
         def validate_password(self, haslo):
